@@ -1,9 +1,9 @@
 '''
-Herhangi geçerli RGB üçlüsünü en yakın munsell rengine dönüştüren algoritma.
-Kameradan gelen RGB değeriyle Munsell-RGB veri setindeki RGB değerleriyle karşılaştırıp
-RGB uzayında en yakın (hata payı en az) olan değerini buluyor.
-En yakın değeri bulmak için öklid uzaklığı formülünü kullanıyor.
-(Uzaklık (hata payı)) = sqrt((R_cam - R_data)^2 + (G_cam - G_data)^2 + (B_cam - B_data)^2)
+Algoritmo que converte qualquer RGB válido para a cor Munsell mais próxima.
+Compare o valor RGB da câmera com os valores RGB no conjunto de dados Munsell-RGB.
+Ele encontra o valor mais próximo (menor margem de erro) no espaço RGB.
+Ele usa a fórmula da distância euclidiana para encontrar o valor mais próximo.
+(Distância (margem de erro)) = sqrt ((R_cam - R_data) ^ 2 + (G_cam - G_data) ^ 2 + (B_cam - B_data) ^ 2) 
 
 '''
 import cv2
